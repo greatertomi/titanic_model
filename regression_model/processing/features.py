@@ -1,13 +1,13 @@
-from sklearn.base import BaseEstimator, TransformerMixin
-
 from typing import List
+
 import pandas as pd
+from sklearn.base import BaseEstimator, TransformerMixin
 
 
 class ExtractLetterTransformer(BaseEstimator, TransformerMixin):
     def __init__(self, variables: List[str]):
         if not isinstance(variables, list):
-            raise ValueError('variable should be a list')
+            raise ValueError("variable should be a list")
 
         self.variables = variables
         # self.reference_variables = reference_variables

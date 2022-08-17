@@ -56,7 +56,10 @@ def create_and_validate_config(parsed_config: YAML = None) -> Config:
     if parsed_config is None:
         parsed_config = fetch_config_from_yaml()
 
-    _config = Config(app_config=AppConfig(**parsed_config.data), model_config=ModelConfig(**parsed_config.data))
+    _config = Config(
+        app_config=AppConfig(**parsed_config.data),
+        model_config=ModelConfig(**parsed_config.data),
+    )
 
     return _config
 
