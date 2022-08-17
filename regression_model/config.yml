@@ -9,7 +9,7 @@ pipeline_save_file: regression_model_output_v
 
 test_size: 0.1
 random_state: 0
-alpha: 0.001
+c: 0.001
 
 numerical_variables:
   - age
@@ -23,3 +23,15 @@ categorical_variables:
 
 cabin:
   - cabin
+
+features:
+  - pclass
+  - title
+  - sex
+  - age
+  - fare
+  - sibsp
+  - parch
+  - cabin
+  - embarked
+
