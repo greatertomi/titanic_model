@@ -1,0 +1,25 @@
+package_name: regression_model
+
+data_file: titanic.csv
+
+target: survived
+
+pipeline_name: regression_model
+pipeline_save_file: regression_model_output_v
+
+test_size: 0.1
+random_state: 0
+alpha: 0.001
+
+numerical_variables:
+  - age
+  - fare
+
+categorical_variables:
+  - sex
+  - cabin
+  - embarked
+  - title
+
+cabin:
+  - cabin

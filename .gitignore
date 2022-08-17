@@ -1,5 +1,5 @@
 .idea
-housingvenv
+titanicvenv
 .tox
 build
 dist
