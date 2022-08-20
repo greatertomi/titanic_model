@@ -6,8 +6,8 @@ from pathlib import Path
 from setuptools import find_packages, setup
 
 # Package meta-data.
-NAME = 'tid-regression-model'
-DESCRIPTION = "Example regression model package from Train In Data."
+NAME = 'tid-classification-model'
+DESCRIPTION = "Example of a classification model"
 URL = "https://github.com/greatertomi/titanic_model"
 EMAIL = "oshalusijohn@gmail.com"
 AUTHOR = "John Oshalusi"

@@ -5,7 +5,7 @@ from sklearn.model_selection import train_test_split
 
 
 def run_training() -> None:
-    data = load_dataset(file_name=config.app_config.data_file)
+    data = load_dataset(file_name=config.app_config.train_data_file)
     # divide train and test
     X_train, X_test, y_train, y_test = train_test_split(
         data[config.model_config.features],  # predictors

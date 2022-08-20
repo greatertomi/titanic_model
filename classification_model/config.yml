@@ -1,6 +1,7 @@
 package_name: classification_model
 
-data_file: titanic.csv
+train_data_file: train.csv
+test_data_file: test.csv
 
 target: survived
 
