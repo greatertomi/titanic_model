@@ -9,11 +9,14 @@ from classification_model.processing.data_manager import pre_pipeline_preparatio
 
 
 def validate_inputs(*, input_data: pd.DataFrame) -> Tuple[pd.DataFrame, Optional[dict]]:
+    """Check model inputs for unprocessable values."""
+
     pre_processed = pre_pipeline_preparation(dataframe=input_data)
     validated_data = pre_processed[config.model_config.features].copy()
     errors = None
 
     try:
+        # replace numpy nans so that pydantic can validate
         MultipleTitanicDataInputs(
             inputs=validated_data.replace({np.nan: None}).to_dict(orient="records")
         )
