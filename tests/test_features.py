@@ -1,5 +1,5 @@
-from regression_model.config.core import config
-from regression_model.processing.features import ExtractLetterTransformer
+from classification_model.config.core import config
+from classification_model.processing.features import ExtractLetterTransformer
 
 
 def test_extract_letter_transformer(sample_input_data):

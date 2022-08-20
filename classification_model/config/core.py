@@ -1,12 +1,12 @@
 from pathlib import Path
-from typing import Dict, List, Sequence
+from typing import Sequence
 
 from pydantic import BaseModel
 from strictyaml import YAML, load
 
-import regression_model
+import classification_model
 
-PACKAGE_ROOT = Path(regression_model.__file__).resolve().parent
+PACKAGE_ROOT = Path(classification_model.__file__).resolve().parent
 ROOT = PACKAGE_ROOT.parent
 CONFIG_FILE_PATH = PACKAGE_ROOT / "config.yml"
 DATASET_DIR = PACKAGE_ROOT / "datasets"
@@ -24,10 +24,11 @@ class ModelConfig(BaseModel):
     test_size: float
     random_state: int
     c: float
-    numerical_variables: List[str]
-    categorical_variables: List[str]
-    cabin: List[str]
-    features: List[str]
+    unused_fields: Sequence[str]
+    numerical_variables: Sequence[str]
+    categorical_variables: Sequence[str]
+    cabin: Sequence[str]
+    features: Sequence[str]
 
 
 class Config(BaseModel):

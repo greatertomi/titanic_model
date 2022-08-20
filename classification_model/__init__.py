@@ -1,6 +1,6 @@
 import logging
 
-from regression_model.config.core import PACKAGE_ROOT, config
+from classification_model.config.core import PACKAGE_ROOT, config
 
 logging.getLogger(config.app_config.package_name).addHandler(logging.NullHandler())
 

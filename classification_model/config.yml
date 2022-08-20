@@ -1,10 +1,10 @@
-package_name: regression_model
+package_name: classification_model
 
 data_file: titanic.csv
 
 target: survived
 
-pipeline_name: regression_model
+pipeline_name: classification_model
 pipeline_save_file: regression_model_output_v
 
 test_size: 0.1
@@ -35,3 +35,9 @@ features:
   - cabin
   - embarked
 
+unused_fields:
+  - name
+  - ticket
+  - boat
+  - body
+  - home.dest

@@ -8,8 +8,8 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import StandardScaler
 
-from regression_model.config.core import config
-from regression_model.processing.features import ExtractLetterTransformer
+from classification_model.config.core import config
+from classification_model.processing.features import ExtractLetterTransformer
 
 # set up the pipeline
 titanic_pipe = Pipeline(
