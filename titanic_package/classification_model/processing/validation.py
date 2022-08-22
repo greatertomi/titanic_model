@@ -5,7 +5,9 @@ import pandas as pd
 from pydantic import BaseModel, ValidationError
 
 from classification_model.config.core import config
-from classification_model.processing.data_manager import pre_pipeline_preparation
+from classification_model.processing.data_manager import (
+    pre_pipeline_preparation,
+)
 
 
 def validate_inputs(*, input_data: pd.DataFrame) -> Tuple[pd.DataFrame, Optional[dict]]:

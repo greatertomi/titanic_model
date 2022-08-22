@@ -12,7 +12,9 @@ from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import StandardScaler
 
 from classification_model.config.core import config
-from classification_model.processing.features import ExtractLetterTransformer
+from classification_model.processing.features import (
+    ExtractLetterTransformer,
+)
 
 titanic_pipe = Pipeline(
     [

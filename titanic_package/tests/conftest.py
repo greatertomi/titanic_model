@@ -3,8 +3,10 @@ import logging
 import pytest
 from sklearn.model_selection import train_test_split
 
-from classification_model.config.core import config
-from classification_model.processing.data_manager import _load_raw_dataset
+from titanic_package.classification_model.config.core import config
+from titanic_package.classification_model.processing.data_manager import (
+    _load_raw_dataset,
+)
 
 logger = logging.getLogger(__name__)
 
