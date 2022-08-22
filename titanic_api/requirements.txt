@@ -1,4 +1,4 @@
---extra-index-url="https://tdHQYVT9Hv6z2rYfEQh8@pypi.fury.io/greatertomi"
+--extra-index-url=${EXTRA_INDEX_URL}
 
 uvicorn>=0.16.0,<0.18.0
 fastapi>=0.64.0,<1.0.0
