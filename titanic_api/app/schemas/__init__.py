@@ -1,2 +1,2 @@
 from .titanic import Titanic
-from .predict import MultipleTitanicDataInputSchema
+from .predict import MultipleTitanicDataInputSchema, PredictionResults

@@ -29,7 +29,7 @@ class MultipleTitanicDataInputSchema(BaseModel):
                         "cabin": "C22",
                         "embarked": "S",
                         "boat": "?",
-                        "body": "Montreal, PQ / Chesterville, ON"
+                        "body": "5"
                     }
                 ]
             }
